@@ -1,0 +1,98 @@
+/* TikTok-Themed UI */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 320px;
+    padding: 15px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Input Field */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ff2d55;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: white;
+    font-size: 14px;
+}
+
+/* Dropdown Styling */
+label {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+select {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 15px 0; /* Added spacing */
+    border: 2px solid #ff2d55;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: white;
+    font-size: 14px;
+    appearance: none; /* Removes default dropdown styling */
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Add dropdown arrow */
+select {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23ff2d55" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Increased gap */
+    margin-top: 5px;
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(135deg, #ff2d55, #ff5a5f);
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(255, 45, 85, 0.3);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #ff5a5f, #ff2d55);
+}
+
+/* Separator Line */
+hr {
+    border: 1px solid #ff2d55;
+    margin: 20px 0;
+}
+
+/* Transcription Box */
+#transcription {
+    background-color: #1e1e1e;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-style: italic;
+}

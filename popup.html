@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InVIEWmation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Cogniview</h2>
+
+    <input type="text" id="searchQuery" placeholder="Type your search...">
+
+    <!-- Dropdown for AI Engine Selection -->
+    <label for="aiEngineSelect">Choose AI Engine:</label>
+    <select id="aiEngineSelect">
+        <option value="perplexity">Perplexity</option>
+        <option value="gemini">Gemini</option>
+        <option value="bingai">Bing AI</option>
+        <option value="openai">OpenAI</option>
+    </select>
+
+    <div class="buttons">
+        <button data-mode="summary">📜 Summary</button>
+        <button data-mode="trusted">📰 Trusted Sources</button>
+        <button data-mode="factcheck">✅ Fact-Check</button>
+        <button data-mode="gov">🏛️ Gov/Edu</button>
+        <button data-mode="docs">📂 Documents</button>
+        <button data-mode="timeline">📅 Timeline</button>
+        <button data-mode="contrast">🔍 Algorithmic Contrast</button>
+    </div>
+
+    <hr>
+
+    <button id="transcribe">🎤 Transcribe Audio</button>
+    <button id="stopTranscription">🛑 Stop Transcription</button>
+
+    <div id="transcription">Transcription will appear here...</div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

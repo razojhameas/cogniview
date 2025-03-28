@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Cogniview",
+    "version": "1.0",
+    "description": "Smart Search and AI Fact-Checking",
+    "permissions": [
+        "tabs",
+        "scripting",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://gemini.google.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://gemini.google.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
